@@ -1,0 +1,9 @@
+<h1>
+  Clients
+  <%= link_to 'New Client', "#{}", class: "btn btn-primary align-right"  %>
+</h1>
+
+
+<div id="table-users">
+  <%= render 'clients_table', clients: @clients %>
+</div>

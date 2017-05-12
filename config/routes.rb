@@ -5,4 +5,10 @@ Rails.application.routes.draw do
   resources :users
 
   resources :laboratories
+
+  resources :clients
+
+  resources :inventories
+
+  resources :rols
 end
