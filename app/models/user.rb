@@ -1,4 +1,4 @@
 class User < ApplicationRecord
 
-	belongs_to :laboratory
+	#belongs_to :laboratory
 end

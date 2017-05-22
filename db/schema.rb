@@ -54,10 +54,8 @@ ActiveRecord::Schema.define(version: 20170512145435) do
     t.string   "email"
     t.string   "address"
     t.integer  "phone"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.integer  "laboratory_id"
-    t.index ["laboratory_id"], name: "index_users_on_laboratory_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
