@@ -1,0 +1,70 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+  </div>
+      <%= link_to root_path, class: 'navbar-brand' do %>
+        Welcome!
+      <% end %>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user-circle"></i> Test <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li>
+            <%#= link_to edit_admin_content_admin_path(current_admin) do %>
+              </i> Profile</a>
+            <%# end %>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <%#= link_to destroy_user_session_path, method: :delete do %>
+              <i class="fa fa-power-off"></i> Log Out
+            <%# end %>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li>
+          <%= link_to users_path do %>
+              <i class="fa fa-fw fa-users"></i>
+              Users
+          <% end %>
+        </li>
+        <li>
+          <%= link_to laboratories_path do %>
+              <i class="fa fa-fw fa-flask"></i>
+              Laboratories
+          <% end %>
+        </li>  
+        <li>
+          <%= link_to rols_path do %>
+              <i class="fa fa-fw fa-address-card"></i>
+              Rols
+          <% end %>
+        </li>  
+        <li>
+          <%= link_to clients_path do %>
+              <i class="fa fa-fw fa-shopping-bag "></i>
+              Clients
+          <% end %>
+        </li>                  
+        <li>
+          <%= link_to inventories_path do %>
+              <i class="fa fa-fw fa-puzzle-piece"></i>
+              Inventories
+          <% end %>
+        </li>          
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>

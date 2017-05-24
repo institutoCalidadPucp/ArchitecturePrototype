@@ -1,0 +1,9 @@
+<h1>
+  Inventories
+  <%= link_to 'New Inventory', "#{}", class: "btn btn-primary align-right"  %>
+</h1>
+
+
+<div id="table-users">
+  <%= render 'inventories_table', inventories: @inventories %>
+</div>

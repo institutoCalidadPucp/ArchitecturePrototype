@@ -1,0 +1,117 @@
+<h1 class="page-header">Dashboard</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-lg-3 col-md-6">
+      <div class="panel panel-yellow">
+        <%= link_to users_path do %>
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-users fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge"><%= User.count %></div>
+                <div> Users</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left">View Users List</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="panel panel-red">
+        <%= link_to laboratories_path do %>
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-flask fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge"><%= Laboratory.count %></div>
+                <div>Laboratories</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left">View Laboratories List</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="panel panel-red">
+        <%= link_to rols_path do %>
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-address-card fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge"><%= Rol.count %></div>
+                <div>Rols</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left">View Rols List</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="panel panel-red">
+        <%= link_to clients_path do %>
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-shopping-basket fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge"><%= Client.count %></div>
+                <div>Clients</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left">View Clients List</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="panel panel-red">
+        <%= link_to inventories_path do %>
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-puzzle-piece fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge"><%= Inventory.count %></div>
+                <div>Inventories</div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left">View Inventories List</span>
+            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+            <div class="clearfix"></div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
